@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <link media="screen" rel="stylesheet" href="css/principal.css" />
+    </head>
+    <body>
+        <script src="js/principal.js"></script>
+        <header>
+            <p onclick="window.open('index.html','_self')">Buscar con Google</p>
+            <p onclick="window.open('imagenes.html','_self')">B&uacute;squeda de im&aacute;genes</p>
+        </header>
+        <div id="contenido-dos">
+            <div id="columna-izquierda">
+                <p id="mostrar-paginas">Mostrar p&aacute;ginas que contengan...</p>
+                <div id="contenido-avanzada">
+                    <form class="avanzada-buscador" action="https://www.google.com/search">
+                        <p>todas estas palabras: </p>
+                        <input class="buscador-avanzado" type="text" name="todas">
+                    </form>
+                    <form class="avanzada-buscador" action="https://www.google.com/search">
+                        <p>esta palabra o frase exactas:</p>
+                        <input class="buscador-avanzado" type="text" name="exacta">
+                    </form>
+                    <form class="avanzada-buscador" action="https://www.google.com/search">
+                        <p>cualquiera de estas palabras:</p>
+                        <input class="buscador-avanzado" type="text" name="cualquiera">
+                    </form>
+                    <form class="avanzada-buscador" action="https://www.google.com/search">
+                        <p>ninguna de estas palabras:</p>
+                        <input class="buscador-avanzado" type="text" name="ninguna">
+                    </form>
+                    <input id="button-avanzada" class="boton" type="submit" value="Búsqueda avanzada">
+                </div>
+            </div>
+            <div id="columna-derecha">
+                <p>Para hacer esto en el cuadro de búsqueda</p>
+                <div id="contenido-avanzada-dos">
+                    <p>Ingresa las palabras importantes: Terrier ratonero tricolor .</p>
+                    <p>Ingresa las palabras exactas entre comillas: "Terrier ratonero" .</p>
+                    <p>Ingresa OR entre las palabras que desees:<br>En miniatura OR estándar .</p>
+                    <p>Ingresa un signo menos justo delante de las palabras que no deseas que aparezcan: -Roedor, -"Jack Russell" .</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
